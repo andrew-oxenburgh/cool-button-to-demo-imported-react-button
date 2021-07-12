@@ -1,43 +1,83 @@
 {
-  "name": "react-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+   "name": "cool-button-to-demo-imported-react-button",
+   "version": "0.1.0",
+   "main": "dist/main.js",
+   "private": false,
+   "license": "MIT",
+   "files": [
+      "dist",
+      "README.md"
+   ],
+   "scripts": {
+      "run:audit": "yarn audit --groups dependencies --level high",
+      "run:clean": "rimraf dist node_modules storybook-static",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "storybook": "start-storybook -p 6006 -s public",
+      "build-storybook": "build-storybook -s public",
+      "clean": "rimraf dist",
+      "compile": "npm run clean && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
+   },
+   "dependencies": {
+      "@types/node": "^12.0.0",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "react-dom": "^17.0.2",
+      "react-test-renderer": "^17.0.2",
+      "typescript": "^4.1.2",
+      "web-vitals": "^1.0.1"
+   },
+   "peerDependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+   },
+   "devDependencies": {
+      "@babel/cli": "^7.14.5",
+      "@babel/preset-env": "^7.14.7",
+      "@babel/preset-react": "^7.14.5",
+      "@storybook/addon-actions": "^6.3.4",
+      "@storybook/addon-essentials": "^6.3.4",
+      "@storybook/addon-links": "^6.3.4",
+      "@storybook/addon-storyshots": "^6.3.4",
+      "@storybook/cli": "^6.3.4",
+      "@storybook/node-logger": "^6.3.4",
+      "@storybook/preset-create-react-app": "^3.2.0",
+      "@storybook/react": "^6.3.4",
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "@types/jest": "^26.0.15",
+      "install-peers": "^1.0.3",
+      "react-scripts": "4.0.3"
+   },
+   "eslintConfig": {
+      "extends": [
+         "react-app",
+         "react-app/jest"
+      ],
+      "overrides": [
+         {
+            "files": [
+               "**/*.stories.*"
+            ],
+            "rules": {
+               "import/no-anonymous-default-export": "off"
+            }
+         }
+      ]
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   }
 }

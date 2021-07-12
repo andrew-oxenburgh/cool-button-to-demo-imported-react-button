@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Button Default 1`] = `
+<button
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "yellow",
+    }
+  }
+>
+  Their Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Standard 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+>
+  what?
+</button>
+`;
