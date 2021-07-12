@@ -15,10 +15,9 @@ function Button(_ref) {
   var label = _ref.label,
       backgroundColor = _ref.backgroundColor,
       onClick = _ref.onClick;
-  var style = backgroundColor && {
+  var style = backgroundColor ? {
     backgroundColor: backgroundColor
-  };
-  style = style || {
+  } : {
     backgroundColor: 'red'
   };
   return /*#__PURE__*/_react.default.createElement("button", {
@@ -30,7 +29,7 @@ function Button(_ref) {
 Button.propTypes = {
   backgroundColor: _propTypes.default.string,
   label: _propTypes.default.string.isRequired,
-  onClick: _propTypes.default.func.isRequired
+  onClick: _propTypes.default.func
 };
 Button.defaultProps = {
   backgroundColor: 'yellow'
