@@ -10,7 +10,7 @@
    ],
    "scripts": {
       "run:audit": "yarn audit --groups dependencies --level high",
-      "run:clean": "rimraf dist node_modules storybook-static ./package-lock.json",
+      "run:clean": "rimraf node_modules storybook-static ./package-lock.json",
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test",
