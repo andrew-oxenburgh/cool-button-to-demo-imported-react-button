@@ -1,5 +1,5 @@
 {
-   "name": "cool-button-to-demo-imported-react-button",
+   "name": "@andrew-oxenburgh/cool-button-to-demo-imported-react-button",
    "version": "1.0.0",
    "main": "dist/main.js",
    "private": false,
@@ -31,7 +31,6 @@
       "compile": "npm run clean && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
    },
    "dependencies": {
-      "@babel/preset-typescript": "^7.14.5",
       "@types/node": "^12.0.0",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
