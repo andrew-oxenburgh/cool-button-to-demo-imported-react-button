@@ -1,6 +1,6 @@
 {
-   "name": "@andrew-oxenburgh/cool-button-to-demo-imported-react-button",
-   "version": "1.0.0",
+   "name": "@andrew.oxenburgh/cool-button-demo",
+   "version": "1.0.1",
    "main": "dist/main.js",
    "private": false,
    "license": "MIT",
