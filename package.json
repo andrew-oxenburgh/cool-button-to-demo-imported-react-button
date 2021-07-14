@@ -4,6 +4,12 @@
    "main": "dist/main.js",
    "private": false,
    "license": "MIT",
+   "description": "One react component, for demo purposes",
+   "author": {
+      "name": "Andrew Oxenburgh",
+      "email": "andrew.oxenburgh@gmail.com",
+      "url": "https://andrew-oxenburgh.github.io/"
+   },
    "files": [
       "dist",
       "README.md"

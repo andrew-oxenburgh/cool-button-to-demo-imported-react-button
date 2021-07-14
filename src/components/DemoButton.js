@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({label, backgroundColor, onClick}) {
+export default function DemoButton({label, backgroundColor, onClick}) {
    let style = backgroundColor ? {backgroundColor} : {backgroundColor: 'red'}
 
    return (
@@ -12,12 +12,12 @@ export default function Button({label, backgroundColor, onClick}) {
    );
 }
 
-Button.propTypes = {
+DemoButton.propTypes = {
    backgroundColor: PropTypes.string,
    label: PropTypes.string.isRequired,
    onClick: PropTypes.func,
 };
 
-Button.defaultProps = {
+DemoButton.defaultProps = {
    backgroundColor: 'yellow',
 };

@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Button from './components/Button';
+import DemoButton from './components/DemoButton';
 
 export default {
    title: 'Example/Button',
-   component: Button,
+   component: DemoButton,
    argTypes: {
       backgroundColor: { control: 'color' },
    },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <DemoButton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

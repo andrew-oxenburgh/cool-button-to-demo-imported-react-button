@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = Button;
+exports.default = DemoButton;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -11,7 +11,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Button(_ref) {
+function DemoButton(_ref) {
   var label = _ref.label,
       backgroundColor = _ref.backgroundColor,
       onClick = _ref.onClick;
@@ -26,11 +26,11 @@ function Button(_ref) {
   }, label);
 }
 
-Button.propTypes = {
+DemoButton.propTypes = {
   backgroundColor: _propTypes.default.string,
   label: _propTypes.default.string.isRequired,
   onClick: _propTypes.default.func
 };
-Button.defaultProps = {
+DemoButton.defaultProps = {
   backgroundColor: 'yellow'
 };
