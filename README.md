@@ -10,13 +10,13 @@ yarn compile
 
 Go to another react app.
 
-`yarn add ../cool-button-to-demo-imported-react-`
+`yarn add ../cool-button-to-demo-imported-react-button`
 
 ```typescript jsx
 
-import {Button} from 'cool-button-to-demo-imported-react-button'
+import {DemoButton} from 'cool-button-to-demo-imported-react-button'
 
-<Button label="button" backgroundColor="pink" onClick={()=>{alert('clicked')}}/>
+<DemoButton label="button" backgroundColor="pink" onClick={()=>{alert('clicked')}}/>
 
 ```
 

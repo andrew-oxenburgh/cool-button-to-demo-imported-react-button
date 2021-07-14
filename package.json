@@ -1,6 +1,6 @@
 {
    "name": "cool-button-to-demo-imported-react-button",
-   "version": "0.1.0",
+   "version": "1.0.0",
    "main": "dist/main.js",
    "private": false,
    "license": "MIT",
@@ -16,7 +16,7 @@
    ],
    "repository": {
       "type": "git",
-      "url": "https://github.com/npm/cli.git"
+      "url": "https://github.com/andrew-oxenburgh/cool-button-to-demo-imported-react-button.git"
    },
    "scripts": {
       "run:audit": "yarn audit --groups dependencies --level high",
@@ -31,6 +31,7 @@
       "compile": "npm run clean && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
    },
    "dependencies": {
+      "@babel/preset-typescript": "^7.14.5",
       "@types/node": "^12.0.0",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
@@ -61,22 +62,6 @@
       "@types/jest": "^26.0.15",
       "install-peers": "^1.0.3",
       "react-scripts": "4.0.3"
-   },
-   "eslintConfig": {
-      "extends": [
-         "react-app",
-         "react-app/jest"
-      ],
-      "overrides": [
-         {
-            "files": [
-               "**/*.stories.*"
-            ],
-            "rules": {
-               "import/no-anonymous-default-export": "off"
-            }
-         }
-      ]
    },
    "browserslist": {
       "production": [
