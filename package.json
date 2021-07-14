@@ -14,6 +14,10 @@
       "dist",
       "README.md"
    ],
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/npm/cli.git"
+   },
    "scripts": {
       "run:audit": "yarn audit --groups dependencies --level high",
       "run:clean": "rimraf node_modules storybook-static ./package-lock.json",
