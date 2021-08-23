@@ -10,7 +10,7 @@ yarn compile
 
 Go to a react app.
 
-`yarn add @andrew.oxenburgh/cool-button-demo`
+`yarn add @andrew.oxenburgh/cool-button-demo-imported-react-button`
 
 Add a component something like this:
 
